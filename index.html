@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#fab005" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny-Mountains</title>
+    <link rel="icon" href="/api.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+</head>
+
+<body>
+    <nav class="bar">
+        <div class="list center">
+            <li class="inList" style="background-color: white; border-radius: 112px;"><img src="/api.png" alt=""></li>
+            <li class="inList dev"><a href="index.html">Home</a></li>
+            <li class="inList dev"><a href="About.html">About Us</a></li>
+        </div>
+        <div class="list center">
+            <li class="inList moon">🌑</li>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+    <main class="no_dev">
+
+        <section class="second">
+            <div id="head" class="headers center2">
+                <h1>Sunny</h1>
+                <h1 class="head2">Mountains App</h1>
+            </div>
+            <div class="searchFunction center2">
+                <input type="text" class="input" placeholder="Enter a city name ">
+                <br>
+                <button class="button animate" style="font-weight: bolder;">Search</button>
+            </div>
+            <br>
+            <div class="center2 mainCity">
+                <h2 class="city">Nainital</h2>
+                <small style="margin-top: -30px ; margin-bottom:16px" class="small"></small>
+                <div class="center">
+                    <div style="font-weight: bolder; margin-bottom:20px" class="date"></div>
+                    &nbsp; &nbsp;
+                    <div style=" color: #fab005 ;font-weight: bolder; margin-bottom:20px" id="span"></div>
+                </div>
+            </div>
+
+            <div class="loadingSection center">
+                <div class="loader">
+                </div>
+            </div>
+
+
+            <!-- TODO: Floating elements -->
+
+            <div class="fixedSection">
+                <div class="instruction_box">Tap on the mic and say the name of <br> the place, it will be automatically
+                    typed in <br>the search bar</div>
+                <button class="cancel_button">x</button>
+                <button id="voice-command-button"><i class="fa-solid fa-microphone"></i></button>
+            </div>
+
+
+            <div class="align" style="display: none;">
+                <div class="align2">
+
+                    <div class="sun">
+                        <div class="heading">
+                            <i class="fa-solid fa-temperature-three-quarters"></i>
+                        </div>
+                        <div class="info center">
+                            <div class="Child info1">Api Down</div>
+                        </div>
+                        <div class="other_info center2">
+                            <div class="aligns1"></div>
+                            <div class="aligns2"></div>
+                            <div class="aligns3"></div>
+                        </div>
+                    </div>
+
+                    <div class="sun">
+                        <div class="heading">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <div class="info center">
+                            <div class="Child info2">Api Down</div>
+                        </div>
+                        <div class="other_info center2">
+                            <div class="aligns4"></div>
+                            <div class="aligns5"></div>
+                            <div class="aligns6"></div>
+                        </div>
+                    </div>
+
+                    <div class="sun">
+                        <!-- <div> -->
+                        <div class="heading">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <div class="info center">
+                            <div class="Child info3">Api Down</div>
+                        </div>
+                        <div class="other_info center2">
+                            <div style="margin-top: -5px;" class="aligns7"></div>
+                            <div class="aligns8"></div>
+                            <div class="aligns9"></div>
+                        </div>
+                    </div>
+
+                    <div class="sun">
+                        <div class="heading">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                        <div class="info center">
+                            <div class="Child info5">Api Down</div>
+                        </div>
+                        <div class="other_info center2">
+                            <div class="aligns13"></div>
+                            <div class="aligns14"></div>
+                            <div class="aligns15"></div>
+                        </div>
+                    </div>
+                    <div class="sun">
+                        <div class="heading">
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+                        <div class="info center">
+                            <div class="Child info4">Api Down</div>
+                        </div>
+                        <div class="other_info center2">
+                            <div class="aligns10"></div>
+                            <div class="aligns11"></div>
+                            <div class="aligns12"></div>
+                        </div>
+                    </div>
+                    <div class="sun">
+                        <!-- <div> -->
+                        <div class="heading">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <div class="info center">
+                            <div class="Child info6">Api Down</div>
+                        </div>
+                        <div class="other_info center2">
+                            <div class="aligns16"></div>
+                            <div class="aligns17"></div>
+                            <div class="aligns18"></div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <section class="fav">
+            <div class="flexing">
+                <div class="center"
+                    style="margin-top:60px; text-align:center ;margin-bottom: -40px; font-size: 25px; font-weight: bolder;">
+                    Hill Stations to vist this Summer
+                </div>
+            </div>
+            <div class="indexhead">
+                <div class="cityplus center">City</div>
+                <div class="tempplus center">Temperature</div>
+                <div class="windplus center">Wind</div>
+                <div class="humplus center">Humidity</div>
+            </div>
+            <div class="famousPlaces">
+            </div>
+        </section>
+        <section class="fav">
+            <div class="flexing">
+                <div class="center"
+                    style="text-align:center ;margin-top:60px;margin-bottom: -40px; font-size: 25px; font-weight: bolder;">
+                    Your Previous Searches and results
+                </div>
+            </div>
+            <div class="indexhead">
+                <div class="cityplus center">City</div>
+                <div class="tempplus center">Temperature</div>
+                <div class="windplus center">Wind</div>
+                <div class="humplus center">Humidity</div>
+            </div>
+            <div class="prevInfo1">
+            </div>
+        </section>
+        <div class="center">
+            <button class="animate" id="clearButton" style="margin-bottom: 23px; font-weight: bolder;">Clear
+                Searches</button>
+        </div>
+
+
+<!--         <section class="socials">
+            <div class="center" style="justify-content: space-evenly;">
+                <div class="links"> <a href="https://stackoverflow.com/users/19757319/ankit?tab=topactivity"><i
+                            style="color: rgb(221, 93, 46);" class="fa-brands fa-stack-overflow"></i></a></div>
+                <div class="links"> <a href="https://www.linkedin.com/in/ankit-singh-chauhan-30057220a/"><i
+                            style="color: rgb(32, 32, 177);" class="fa-brands fa-linkedin"></i></a></div>
+                <div class="links"> <a href="http://"><i style="color: rgb(246, 61, 92);"
+                            class="fa-brands fa-instagram"></i></a></div>
+            </div>
+        </section> -->
+<!--         <div class="align">
+            Made with ❤ by &nbsp; <a style="color :#fab005" href="http://ankitsinghchauhan.in/" target="_blank"
+                rel="noopener noreferrer"> Ankit</a>
+            <br>
+            <br>
+        </div> -->
+    </main>
+
+    <!--  dev mode started -->
+
+
+
+    <script src="https://kit.fontawesome.com/d4c2d1725b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="index.js"></script>
+    <script src="prism.js"></script>
+</body>
+
+</html>
